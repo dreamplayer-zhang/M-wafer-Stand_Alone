@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="10.소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="11.헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="10.소스 파일\1.공용파일">
+      <UniqueIdentifier>{7bfd6be5-69db-442d-81c3-7552e43d889b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10.소스 파일\6.축보드">
+      <UniqueIdentifier>{4405b302-8306-46c0-bb6e-dde00625b378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10.소스 파일\7.카메라">
+      <UniqueIdentifier>{fa4c7866-aece-4819-9c65-ff73e2571d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10.소스 파일\8.웨이퍼 얼라인">
+      <UniqueIdentifier>{5dccd2d1-5a33-4636-b2f4-496162eb8af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10.소스 파일\9.팝업창">
+      <UniqueIdentifier>{cf099102-0085-44b0-b291-c75c882a87ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="유틸리티">
+      <UniqueIdentifier>{0d38c92d-2eeb-4c81-b392-25501b9c1198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="유틸리티\2.SpreadSheet">
+      <UniqueIdentifier>{0f33c029-f9ad-44af-b686-5ee3126ac8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="유틸리티\3.차트">
+      <UniqueIdentifier>{ecc0b250-8266-4662-adce-df8026a18065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="유틸리티\5.Rs232c통신">
+      <UniqueIdentifier>{bf565bc4-df66-4a57-83ea-e84c6e9e20d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="EllipsoMeter.reg" />
+    <None Include="res\EllipsoMeter.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\EllipsoMeter.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="MultiPortX.lic">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </None>
+    <None Include="MultiPortX.tlb">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </None>
+    <None Include="MessageOutModule.dll">
+      <Filter>유틸리티</Filter>
+    </None>
+    <None Include="res\Up_1_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Up_1_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Up_1_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Up_1_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Right_1_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Right_1_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Right_1_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Right_1_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Left_1_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Left_1_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Left_1_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Left_1_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Down_1_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Down_1_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Down_1_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Down_1_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\GRAY.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\GREEN.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EllipsoMeter.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipsoMeterDlg.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProxy.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="multiportxx.h">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityClass.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlDocument.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>10.소스 파일\1.공용파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>10.소스 파일\1.공용파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CvvImage.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorBtn.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorStatic.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageOutModule.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskHandle.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="VitLedControl.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="LogProcess.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="AJIN_CtlClass.h">
+      <Filter>10.소스 파일\6.축보드</Filter>
+    </ClInclude>
+    <ClInclude Include="JogMove.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageButton.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleScrollBar.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCV_Lib.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCV_LibDlg.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="EZIni.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyAccessToolDlg.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="INI.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="FlirCamera.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRateCounter.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionWindow.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderDlg.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="_Font.h">
+      <Filter>유틸리티\2.SpreadSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="CPictureFpsread.h">
+      <Filter>유틸리티\2.SpreadSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="fpspread_point.h">
+      <Filter>유틸리티\2.SpreadSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="Init.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManage.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoFileDelDLG.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoInspectorDlg.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="DSIInspectorControl.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="StageMapViewDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="_Picture.h">
+      <Filter>유틸리티\2.SpreadSheet</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart\bchartdir.h">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart\ChartViewer.h">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart\FinanceChart.h">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart\memblock.h">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClInclude>
+    <ClInclude Include="MapViewDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelMapDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ReviewDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="USerInputDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataClientSocketEx.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="DataServerSocketEx.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="ElipsoMeterIF.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ElipsoMeter_IO.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordChangeDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordManagerDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoMeasureParamDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ElipsoMeterRobotIF.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="StopWatch.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart\chartdir.h">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClInclude>
+    <ClInclude Include="ATXMotion.h">
+      <Filter>10.소스 파일\6.축보드</Filter>
+    </ClInclude>
+    <ClInclude Include="IO.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkRun.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CamJAI.h">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClInclude>
+    <ClInclude Include="CommThread.h">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelData.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MilVisionDlg.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="MilVision.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="PointDLG.h">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClInclude>
+    <ClInclude Include="ExcelEx.h">
+      <Filter>유틸리티</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeObj.h">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClInclude>
+    <ClInclude Include="RegPattAlignDlg1.h">
+      <Filter>11.헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EllipsoMeter.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipsoMeterDlg.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProxy.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="multiportxx.cpp">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityClass.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlDocument.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="CvvImage.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorBtn.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorStatic.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskHandle.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="VitLedControl.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="LogProcess.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="AJIN_CtlClass.cpp">
+      <Filter>10.소스 파일\6.축보드</Filter>
+    </ClCompile>
+    <ClCompile Include="JogMove.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageButton.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleScrollBar.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCV_Lib.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCV_LibDlg.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="EZIni.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyAccessToolDlg.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="INI.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="FlirCamera.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameRateCounter.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionWindow.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderDlg.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="fpspread_point.cpp">
+      <Filter>유틸리티\2.SpreadSheet</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManage.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoFileDelDLG.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoInspectorDlg.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="DSIInspectorControl.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="StageMapViewDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="Chart\ChartViewer.cpp">
+      <Filter>유틸리티\3.차트</Filter>
+    </ClCompile>
+    <ClCompile Include="MapViewDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelMapDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ReviewDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="USerInputDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="DataClientSocketEx.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="DataServerSocketEx.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="ElipsoMeterIF.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ElipsoMeter_IO.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordChangeDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordManagerDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoMeasureParamDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ElipsoMeterRobotIF.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ATXMotion.cpp">
+      <Filter>10.소스 파일\6.축보드</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkRun.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CamJAI.cpp">
+      <Filter>10.소스 파일\7.카메라</Filter>
+    </ClCompile>
+    <ClCompile Include="CommThread.cpp">
+      <Filter>유틸리티\5.Rs232c통신</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelData.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MilVisionDlg.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="MilVision.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="PointDLG.cpp">
+      <Filter>10.소스 파일\9.팝업창</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelEx.cpp">
+      <Filter>유틸리티</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeObj.cpp">
+      <Filter>10.소스 파일\8.웨이퍼 얼라인</Filter>
+    </ClCompile>
+    <ClCompile Include="RegPattAlignDlg1.cpp">
+      <Filter>10.소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="EllipsoMeter.idl">
+      <Filter>10.소스 파일</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EllipsoMeter.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="MessageOutModule.lib">
+      <Filter>유틸리티</Filter>
+    </Library>
+    <Library Include="Chart\chartdir70.lib">
+      <Filter>유틸리티\3.차트</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\admin\Downloads\EllipsoMeter-Ver.201114_kis\EllipsoMeter\res\EllipsoMeter.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

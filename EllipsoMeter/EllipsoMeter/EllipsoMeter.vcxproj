@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5741888-51B0-44F5-BBCE-FA723E48C7BC}</ProjectGuid>
+    <RootNamespace>EllipsoMeter</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>C:\opencv32\x86\vc14\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\EzSoftware UC\AXL%28Library%29\C, C++;C:\opencv32\include;C:\Program Files\JAI\SDK\library\CPP\include;D:\EllipsoMeter\CommonH;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include\MILDyn;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\EzSoftware UC\AXL%28Library%29\Library\32Bit;C:\opencv32\x86\vc14\lib;C:\Program Files\JAI\SDK\library\CPP\lib\Win32_i86;C:\Program Files %28x86%29\Matrox Imaging\MIL\LIB;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>C:\Program Files %28x86%29\MariaDB 10.5\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files %28x86%29\MariaDB 10.5\include\mysql;C:\Program Files %28x86%29\EzSoftware UC\AXL%28Library%29\C, C++;C:\opencv32\include;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include\MILDyn;C:\Program Files\JAI\SDK\library\CPP\include;D:\EllipsoMeter\CommonH;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\MariaDB 10.5\lib;C:\Program Files %28x86%29\EzSoftware UC\AXL%28Library%29\Library\32Bit;C:\opencv32\x86\vc14\lib;C:\Program Files\JAI\SDK\library\CPP\lib\Win32_i86;C:\Program Files %28x86%29\Matrox Imaging\MIL\LIB;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\FLIR Systems\Spinnaker\include;C:\Program Files\JAI\eBUS SDK\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\Program Files\FLIR Systems\Spinnaker\lib\vs2010;D:\EllipsoMeter\BIN;C:\opencv32\x86\vc14\lib;C:\Program Files\JAI\eBUS SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>opencv_world3412d.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>opencv_world3412d.lib;comsuppw.lib;uxtheme.lib</AdditionalDependencies>
+      <StackReserveSize>10000000</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)EllipsoMeter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);C:\Program Files\JAI\eBUS SDK\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\FLIR Systems\Spinnaker\include;C:\Program Files\JAI\eBUS SDK\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\Program Files\FLIR Systems\Spinnaker\lib\vs2010;D:\EllipsoMeter\BIN;C:\Program Files\JAI\eBUS SDK\Libraries;C:\opencv32\x86\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world3412d.lib;comsuppw.lib;uxtheme.lib</AdditionalDependencies>
+      <PerUserRedirection>true</PerUserRedirection>
+      <DelayLoadDLLs>opencv_world3412d.dll</DelayLoadDLLs>
+      <StackReserveSize>10000000</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)EllipsoMeter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="MessageOutModule.dll" />
+    <None Include="MultiPortX.lic" />
+    <None Include="MultiPortX.tlb" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\Down_1_1.bmp" />
+    <None Include="res\Down_1_2.bmp" />
+    <None Include="res\Down_1_3.bmp" />
+    <None Include="res\Down_1_4.bmp" />
+    <None Include="res\GRAY.bmp" />
+    <None Include="res\GREEN.bmp" />
+    <None Include="res\Left_1_1.bmp" />
+    <None Include="res\Left_1_2.bmp" />
+    <None Include="res\Left_1_3.bmp" />
+    <None Include="res\Left_1_4.bmp" />
+    <None Include="res\Right_1_1.bmp" />
+    <None Include="res\Right_1_2.bmp" />
+    <None Include="res\Right_1_3.bmp" />
+    <None Include="res\Right_1_4.bmp" />
+    <None Include="res\EllipsoMeter.ico" />
+    <None Include="res\EllipsoMeter.rc2" />
+    <None Include="res\Up_1_1.bmp" />
+    <None Include="res\Up_1_2.bmp" />
+    <None Include="res\Up_1_3.bmp" />
+    <None Include="res\Up_1_4.bmp" />
+    <None Include="EllipsoMeter.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AJIN_CtlClass.h" />
+    <ClInclude Include="ATXMotion.h" />
+    <ClInclude Include="AutoFileDelDLG.h" />
+    <ClInclude Include="AutoInspectorDlg.h" />
+    <ClInclude Include="AutoMeasureParamDLG.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="CamJAI.h" />
+    <ClInclude Include="ChartDLG.h" />
+    <ClInclude Include="Chart\bchartdir.h" />
+    <ClInclude Include="Chart\chartdir.h" />
+    <ClInclude Include="Chart\ChartViewer.h" />
+    <ClInclude Include="Chart\FinanceChart.h" />
+    <ClInclude Include="Chart\memblock.h" />
+    <ClInclude Include="ColorBtn.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CommThread.h" />
+    <ClInclude Include="ConnectionWindow.h" />
+    <ClInclude Include="CPictureFpsread.h" />
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="DataClientSocketEx.h" />
+    <ClInclude Include="DataServerSocketEx.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="DlgProxy.h" />
+    <ClInclude Include="DoubleScrollBar.h" />
+    <ClInclude Include="DSIInspectorControl.h" />
+    <ClInclude Include="EasyAccessToolDlg.h" />
+    <ClInclude Include="ElipsoMeterIF.h" />
+    <ClInclude Include="ElipsoMeterRobotIF.h" />
+    <ClInclude Include="ElipsoMeter_IO.h" />
+    <ClInclude Include="ExcelEx.h" />
+    <ClInclude Include="EZIni.h" />
+    <ClInclude Include="FlirCamera.h" />
+    <ClInclude Include="FolderDlg.h" />
+    <ClInclude Include="fpspread_point.h" />
+    <ClInclude Include="FrameRateCounter.h" />
+    <ClInclude Include="ImageButton.h" />
+    <ClInclude Include="INI.h" />
+    <ClInclude Include="Init.h" />
+    <ClInclude Include="IO.h" />
+    <ClInclude Include="JogMove.h" />
+    <ClInclude Include="LogProcess.h" />
+    <ClInclude Include="MakeObj.h" />
+    <ClInclude Include="ManualDLG.h" />
+    <ClInclude Include="MapViewDLG.h" />
+    <ClInclude Include="MessageOutModule.h" />
+    <ClInclude Include="MilVision.h" />
+    <ClInclude Include="MilVisionDlg.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="ModelManage.h" />
+    <ClInclude Include="ModelMapDLG.h" />
+    <ClInclude Include="multiportxx.h" />
+    <ClInclude Include="MySQL.h" />
+    <ClInclude Include="OpenCV_Lib.h" />
+    <ClInclude Include="OpenCV_LibDlg.h" />
+    <ClInclude Include="PasswordChangeDLG.h" />
+    <ClInclude Include="PasswordDLG.h" />
+    <ClInclude Include="PasswordManagerDLG.h" />
+    <ClInclude Include="PointDLG.h" />
+    <ClInclude Include="RegPattAlignDlg1.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ReviewDLG.h" />
+    <ClInclude Include="SearchDLG.h" />
+    <ClInclude Include="EllipsoMeter.h" />
+    <ClInclude Include="EllipsoMeterDlg.h" />
+    <ClInclude Include="StageMapViewDLG.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StopWatch.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskHandle.h" />
+    <ClInclude Include="USerInputDLG.h" />
+    <ClInclude Include="UtilityClass.h" />
+    <ClInclude Include="VitLedControl.h" />
+    <ClInclude Include="WorkRun.h" />
+    <ClInclude Include="XmlDocument.h" />
+    <ClInclude Include="_Font.h" />
+    <ClInclude Include="_Picture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AJIN_CtlClass.cpp" />
+    <ClCompile Include="ATXMotion.cpp" />
+    <ClCompile Include="AutoFileDelDLG.cpp" />
+    <ClCompile Include="AutoInspectorDlg.cpp" />
+    <ClCompile Include="AutoMeasureParamDLG.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="CamJAI.cpp" />
+    <ClCompile Include="ChartDLG.cpp" />
+    <ClCompile Include="Chart\ChartViewer.cpp" />
+    <ClCompile Include="ColorBtn.cpp" />
+    <ClCompile Include="ColorStatic.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="CommThread.cpp" />
+    <ClCompile Include="ConnectionWindow.cpp" />
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="DataClientSocketEx.cpp" />
+    <ClCompile Include="DataServerSocketEx.cpp" />
+    <ClCompile Include="DlgProxy.cpp" />
+    <ClCompile Include="DoubleScrollBar.cpp" />
+    <ClCompile Include="DSIInspectorControl.cpp" />
+    <ClCompile Include="EasyAccessToolDlg.cpp" />
+    <ClCompile Include="ElipsoMeterIF.cpp" />
+    <ClCompile Include="ElipsoMeterRobotIF.cpp" />
+    <ClCompile Include="ElipsoMeter_IO.cpp" />
+    <ClCompile Include="ExcelEx.cpp" />
+    <ClCompile Include="EZIni.cpp" />
+    <ClCompile Include="FlirCamera.cpp" />
+    <ClCompile Include="FolderDlg.cpp" />
+    <ClCompile Include="fpspread_point.cpp" />
+    <ClCompile Include="FrameRateCounter.cpp" />
+    <ClCompile Include="ImageButton.cpp" />
+    <ClCompile Include="INI.cpp" />
+    <ClCompile Include="Init.cpp" />
+    <ClCompile Include="IO.cpp" />
+    <ClCompile Include="JogMove.cpp" />
+    <ClCompile Include="LogProcess.cpp" />
+    <ClCompile Include="MakeObj.cpp" />
+    <ClCompile Include="ManualDLG.cpp" />
+    <ClCompile Include="MapViewDLG.cpp" />
+    <ClCompile Include="MilVision.cpp" />
+    <ClCompile Include="MilVisionDlg.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelData.cpp" />
+    <ClCompile Include="ModelManage.cpp" />
+    <ClCompile Include="ModelMapDLG.cpp" />
+    <ClCompile Include="multiportxx.cpp" />
+    <ClCompile Include="OpenCV_Lib.cpp" />
+    <ClCompile Include="OpenCV_LibDlg.cpp" />
+    <ClCompile Include="PasswordChangeDLG.cpp" />
+    <ClCompile Include="PasswordDLG.cpp" />
+    <ClCompile Include="PasswordManagerDLG.cpp" />
+    <ClCompile Include="PointDLG.cpp" />
+    <ClCompile Include="RegPattAlignDlg1.cpp" />
+    <ClCompile Include="ReviewDLG.cpp" />
+    <ClCompile Include="SearchDLG.cpp" />
+    <ClCompile Include="EllipsoMeter.cpp" />
+    <ClCompile Include="EllipsoMeterDlg.cpp" />
+    <ClCompile Include="StageMapViewDLG.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskHandle.cpp" />
+    <ClCompile Include="USerInputDLG.cpp" />
+    <ClCompile Include="UtilityClass.cpp" />
+    <ClCompile Include="VitLedControl.cpp" />
+    <ClCompile Include="WorkRun.cpp" />
+    <ClCompile Include="XmlDocument.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="EllipsoMeter.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EllipsoMeter.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Chart\chartdir70.lib" />
+    <Library Include="MessageOutModule.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\admin\Downloads\EllipsoMeter-Ver.201114_kis\EllipsoMeter\res\EllipsoMeter.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="EllipsoMeter.rc" _x007B_8E5109F0-F4FF-42E7-AF24-907A9D532476_x007D_="CFpspread_value" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

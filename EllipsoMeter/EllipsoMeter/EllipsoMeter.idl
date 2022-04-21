@@ -1,0 +1,29 @@
+// EllipsoMeter.idl : EllipsoMeter.exe에 대한 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(EllipsoMeter.tlb)를 생성합니다.
+
+[ uuid(7A911419-40CA-459B-8B62-0CB1AEC229AC), version(1.0) ]
+library EllipsoMeter
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CEllipsoMeterDoc의 기본 디스패치 인터페이스
+	
+	[ uuid(575B25D2-8771-4C83-821D-0F7831018540) ]
+	dispinterface IEllipsoMeter
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CEllipsoMeterDoc의 클래스 정보
+	
+	[ uuid(3037E892-6752-4A08-8ACA-32D86ED59AE0) ]
+	coclass EllipsoMeter
+	{
+		[default] dispinterface IEllipsoMeter;
+	};
+};
